@@ -1,0 +1,794 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url(Images/Header_BG.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px;
+    height: 100vh;
+    color: #fff;
+    text-align: start;
+}
+
+nav {
+    background-color: #0B9586;
+    color: #f2f2f2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+nav ul li a:focus,
+nav ul li a:active,
+section:target+nav ul li a {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    background-color: #056b5f;
+}
+
+header .home {
+
+    margin-left: 10%;
+    width: 40%;
+    margin-top: 15%;
+}
+
+header .home h1 {
+    font-size: 2.5em;
+}
+
+header .home p {
+    font-size: 1.2em;
+}
+
+header span button {
+    border: none;
+    border-radius: 109px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 16px;
+}
+
+header span button:first-of-type {
+    background-color: #3CAB90;
+    color: white;
+}
+
+header span button:last-of-type {
+    background-color: #FFBB1C;
+    color: #2A3334;
+}
+
+@media (max-width: 1024px) {
+    nav {
+        padding: 16px 50px;
+    }
+
+    header .home {
+        margin-left: 5%;
+        width: 70%;
+    }
+
+    .cards-section {
+        justify-content: center;
+    }
+
+    .card {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+
+    .sec-6 .two .card {
+        width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 16px 30px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header .home {
+        margin: 0;
+        width: 90%;
+    }
+
+    .cards-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 10px 20px;
+    }
+
+    header {
+        padding: 20px 10px;
+    }
+
+    header .home h1 {
+        font-size: 1.8em;
+    }
+
+    header .home p {
+        font-size: 1em;
+    }
+
+    header span button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .cards-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+/* =========================================================================================================================================================================== */
+section {
+    padding: 20px;
+}
+
+.about {
+    display: flex;
+    margin: 20px;
+}
+
+.about-content {
+    width: 50%;
+    margin: 30px;
+}
+
+.about-content h2 {
+    font-size: 3.4em;
+}
+
+.about-content p {
+    font-size: 1.3em;
+    color: #475467;
+}
+
+/* ============================================================================================================================================================================ */
+
+.sec3 {
+    padding: 5% 10%;
+    background-image: url(Images/sec3_BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    min-height: 40vh;
+}
+
+
+.sec3 h1 {
+    font-size: 2.5em;
+}
+
+.sec3 p {
+    font-size: 1.2em;
+}
+
+.sec3 button {
+    border: none;
+    border-radius: 109px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #FFBB1C;
+    color: #2A3334;
+}
+
+/* ============================================================================================================================================================================= */
+
+.sec4{
+    text-align: center;
+}
+
+.sec4 h1 {
+    font-size: 2.5em;
+}
+
+.sec4 p,
+.card p {
+    font-size: 1.2em;
+    color: #475467;
+}
+
+
+.cards-section {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    width: calc(33.33% - 20px); 
+    text-align: start;
+}
+
+.card-image {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.card .card-content{
+    padding: 20px;
+}
+
+.view-products {
+    background-color: transparent; 
+    color: #007BFF; 
+    border: none;
+    border-radius: 5px; 
+    padding: 10px 5px;
+    cursor: pointer;
+    transition: all 0.3s; 
+}
+
+.view-products:hover {
+    background-color: #0056b3; 
+    color: #fff;
+}
+
+/* ================================================================================================================================================================================= */
+
+.sec5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(Images/sec-5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    min-height: 60vh;
+}
+
+
+.sec5-content{
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 50%;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.sec5-content h2{
+    font-size: 2em;
+}
+
+.sec5-content p{
+    font-size: 1.3em;
+}
+
+/* ============================================================================================================================================================================== */
+.sec-6 {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+.sec-6 .one{
+    width: 30%;
+    margin: 20px;
+}
+
+.sec-6 .one .image-container {
+    background-color: #3CAB90; 
+    display: inline-block; 
+    padding: 10px; 
+    border-radius: 5px; 
+}
+
+.sec-6 .one .image-container img {
+    width: 30px;
+    display: block; 
+}
+
+.sec-6 .one h2{
+    font-size: 3em;
+}
+
+.sec-6 .one p{
+    font-size: 1.4em;
+    color: #333;
+}
+
+.sec-6 .two{
+    width: 60%;
+
+}
+
+.sec-6 .two .cards-section {
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap;
+}
+
+
+.sec-6 .two .card {
+    background: #fff;
+    border: 1px #0B9586 solid;
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    width: calc(45% - 20px); 
+    text-align: start;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.sec-6 .two .card h3 {
+    font-size: 1.7em;
+}
+
+
+.sec-6 .two .card p {
+    font-size: 1.2em;
+    color: #475467;
+}
+
+/* ============================================================================================================================================================================= */
+
+.sec-7{
+    text-align: center;
+    padding: 20px;
+    margin: 30px;
+}
+
+.sec-7 h1 {
+    font-size: 2.5em;
+}
+
+.sec-7 p,
+.card p {
+    font-size: 1.2em;
+    color: #475467;
+}
+
+
+.sec-7 .cards-section {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.sec-7 .card {
+    background: #fff;
+    border: 1px #0B9586 solid;
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    width: calc(33.33% - 20px); 
+    text-align: start;
+}
+
+.sec-7 .card-image {
+    max-width: 100%; 
+    height: auto; 
+    padding: 20px;
+}
+
+.sec-7 .card .card-content{
+    padding: 20px;
+}
+
+
+/* ============================================================================================================================================================================== */
+
+.sec-8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 30px;
+}
+
+.sec-8 .one{
+    width: 30%;
+    margin-left: 50px;
+}
+
+.sec-8 .one h2{
+    font-size: 3em;
+}
+
+.sec-8 .one p{
+    font-size: 1.3em;
+}
+
+
+
+.slider {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    background-color: #3CAB900F;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.slider h3{
+    color: #3CAB90;
+}
+
+
+.slider .slide>p{
+    font-size: 1.5em;
+    width: 60%;
+}
+
+
+
+.sec-8 .two .slider .slider-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: nowrap;
+}
+
+
+.nav-dots .dot {
+    transition: background-color 0.3s; /* تأثير الانتقال */
+  
+    background-color: #475467;
+}
+
+.slides {
+    position: relative;
+}
+
+.slide {
+    display: none;
+    padding: 20px;
+}
+
+
+input#slide1:checked ~ .slides .slide:nth-of-type(1),
+input#slide2:checked ~ .slides .slide:nth-of-type(2),
+input#slide3:checked ~ .slides .slide:nth-of-type(3) {
+    display: block;
+}
+
+input[type="radio"]:checked + .slide .arrows .arrow {
+    background-color: black; /* لون السهم عند الضغط عليه */
+    color: #fff; /* تغيير لون النص داخل السهم */
+}
+
+.slide-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    flex: 1;
+    text-align: start;
+    display: flex;
+    align-items: center;
+}
+
+.left p{
+    color: #1C1C1C;
+}
+
+.profile-img {
+    text-align: center;
+    border-radius: 50%;
+    width: 80px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrows {
+    display: flex;
+    justify-content: space-between;
+    width: px; /* عرض السهمين */
+}
+
+.arrow {
+    color: #1C1C1C;
+    border: 1px #1C1C1C solid;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+.arrow:hover {
+    background-color: black; /* لون السهم عند التحويم */
+    color: #fff; /* تغيير لون النص داخل السهم */
+}
+
+/* ============================================================================================================================================================================== */
+
+
+.footer-distributed{
+	background: #283646;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+@media (max-width: 880px) {
+    .footer-distributed {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+.footer-distributed .footer-left span{
+    color: #92989F;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a{
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 40%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons p{
+	margin-top: 25px;
+    margin-left: 15%;
+   color: #92989F;
+}
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+.footer-subscribe {
+    position: relative;
+    width: 300px; /* العرض الكلي */
+  }
+  
+  .subscribe-input {
+    width: 50%;
+    padding: 7px 16px;
+    padding-right: 50px; /* مساحة للزر داخل الـinput */
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    background-color: #92989F;
+  }
+  
+  .subscribe-input::placeholder {
+    color: #888;
+  }
+  
+  .subscribe-button {
+    position: absolute;
+    right: 25px; /* مسافة بين الزر وحافة الـinput */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #FFBB1C;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subscribe-button:hover {
+    background-color: #FFC107;
+  }
+  
